@@ -8,7 +8,6 @@ return {
 		-- nvim-tree
 		-- https://github.com/nvim-tree/nvim-tree.lua
     "nvim-tree/nvim-tree.lua",
-    opts = {},
   },
 	{
 		-- telescope.nvim
@@ -29,4 +28,6 @@ return {
 		end,
 	}, 
 }
+
+
 

@@ -4,29 +4,18 @@
 	(éQçl)https://github.com/LazyVim/LazyVim/tree/main/lua/lazyvim/plugins
 --]]
 return {
-  {
-		-- nvim-tree
-		-- https://github.com/nvim-tree/nvim-tree.lua
-    "nvim-tree/nvim-tree.lua",
-  },
-	{
-		-- telescope.nvim
-		-- https://github.com/nvim-telescope/telescope.nvim
-		"nvim-telescope/telescope.nvim",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-		},
-	},
-	{
-		-- color scheme"Cappuccin"
-		-- https://github.com/catppuccin/nvim?tab=readme-ov-file
-		"catppuccin/nvim", 
-		name = "catppuccin", 
-		priority=1000,
-		config = function()
-			vim.cmd([[colorscheme catppuccin]])
-		end,
-	}, 
+	-- nvim-tree
+	-- https://github.com/nvim-tree/nvim-tree.lua
+  require("plugins.nvim-tree"),
+	-- telescope.nvim
+	-- https://github.com/nvim-telescope/telescope.nvim
+  require("plugins.nvim-telescope"),
+	-- markdown-preview.nvim
+	-- https://github.com/iamcco/markdown-preview.nvim
+  require("plugins.markdown-preview"),
+	-- color scheme"Cappuccin"
+	-- https://github.com/catppuccin/nvim?tab=readme-ov-file
+  require("plugins.catppuccin"),
 }
 
 

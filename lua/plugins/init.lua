@@ -16,6 +16,9 @@ return {
 	-- color scheme"Cappuccin"
 	-- https://github.com/catppuccin/nvim?tab=readme-ov-file
   require("plugins.catppuccin"),
+	-- lualine.nvim
+	-- https://github.com/nvim-lualine/lualine.nvim
+  require("plugins.catppuccin"),
 }
 
 

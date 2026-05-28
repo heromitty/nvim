@@ -29,7 +29,7 @@ vim.o.guifont = "HackGen:h11"
 --"行番号の表示
 vim.opt.number = true
 --"タブ入力を複数の空白入力に置き換える
---vim.opt.expandtab = true	
+vim.opt.expandtab = true	
 --"画面上でタブ文字が占める幅
 vim.opt.tabstop = 4				
 --"インデントでずれる幅
@@ -39,7 +39,9 @@ vim.opt.softtabstop = 4
 --"改行時に前の行のインデントを継続する
 vim.opt.autoindent = true	
 --"改行時に入力された行の末尾に合わせて次の行のインデントを増減する
-vim.opt.smartindent = true
+vim.opt.smartindent = false
+--"C言語のインデントシステムを無効にする(崩れやすいため)
+vim.opt.cindent = false
 --"検索時に大文字・小文字を区別しない
 vim.opt.ignorecase = true
 -- バックアップを保存しない
